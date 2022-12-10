@@ -2,11 +2,14 @@
 #include<time.h>
 #include<stdio.h>
 
-/*
- * main - Print last digit of the number stored in the valiable n.
+/**
+ * main - Entry Point
+ *
+ * Description: 'Print last digit of the number stored in the valiable n.'
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int n;
