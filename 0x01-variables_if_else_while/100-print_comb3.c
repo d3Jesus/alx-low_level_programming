@@ -14,7 +14,7 @@ int main(void)
 	int secondDigit;
 
 	for (firstDigit = 0; firstDigit < 9; firstDigit++)
-		for (secondDigit = 1; secondDigit < 10; secondDigit++)
+		for (secondDigit = firstDigit + 1; secondDigit < 10; secondDigit++)
 		{
 			putchar((firstDigit % 10) + '0');
 			putchar((secondDigit % 10) + '0');
