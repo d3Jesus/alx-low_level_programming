@@ -20,7 +20,7 @@ void print_to_98(int n)
 			if (n != 98)
 			{
 				_putchar(',');
-				_putchat(' ');
+				_putchar(' ');
 			}
 			n++;
 		} while (n <= 98);
