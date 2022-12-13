@@ -10,5 +10,11 @@
 
 int _islower(int c)
 {
-	return (islower(c + '0'));
+	int result;
+       	if (islower(c + '0'))
+		result = 1;
+	else
+		result = 0;
+
+	return (result);
 }
