@@ -3,7 +3,7 @@
 /**
  * print_sign - function that prints the sign of a number
  *
- * @c: the number to verify
+ * @n: the number to verify
  *
  * Return: 
  * 1 if n is greater than zero
