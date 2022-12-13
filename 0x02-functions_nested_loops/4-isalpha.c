@@ -10,7 +10,7 @@
  * Otherwise 0
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
 	if (tolower(c) >= 'a' && tolower(c) <= 'z')
 		return (1);
