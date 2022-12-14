@@ -19,18 +19,24 @@ void times_table(void)
 		{
 			result = column * row;
 
-			if (result >= 0 && result < 10)
-			{
-				_putchar(' ');
-				_putchar(' ');
+			if (result == 0)
+				_putchar('0' + result);
+			else if (result > 0 && result < 10)
 				_putchar('0' + result);
 			}
 			else
 			{
-				_putchar(' ');
 				_putchar((result / 10) + '0');
 				_putchar((result % 10) + '0');
 			}
+
+			if (result <= 9)
+			{
+				_putchar(' ');
+				_putchar(' ');
+			}
+			else
+				_putchar(' ');
 
 			if (row != 9)
 				_putchar(',');
