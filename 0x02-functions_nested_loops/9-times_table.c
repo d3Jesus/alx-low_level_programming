@@ -29,16 +29,16 @@ void times_table(void)
 				_putchar((result % 10) + '0');
 			}
 
+			if (row != 9)
+				_putchar(',');
+
 			if (result <= 9)
 			{
 				_putchar(' ');
 				_putchar(' ');
 			}
-			else
+			else if (column != 9 && row != 9)
 				_putchar(' ');
-
-			if (row != 9)
-				_putchar(',');
 		}
 		_putchar('\n');
 	}
