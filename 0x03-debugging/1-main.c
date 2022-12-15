@@ -13,6 +13,7 @@ int main(void)
 
 	i = 0;
 
+	// this code causes an infinite loop
 	//while (i < 10)
 	//{
 	//	putchar(i);
