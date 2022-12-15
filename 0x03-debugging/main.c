@@ -7,10 +7,15 @@
 
 int main(void)
 {
-	int i;
+	int month;
+	int day;
+	int year;
 
-	i =98;
-	positive_or_negative(i);
+	month = 2;
+	day = 29;
+	year = 2000;
+
+	print_remaining_days(month, day, year);
 
 	return (0);
 }
