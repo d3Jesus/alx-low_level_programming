@@ -6,7 +6,7 @@
  *
  * positive_or_negative - function to test
  *
- * Return: 0
+ * Return: Always 0 
  */
 
 int main(void)
