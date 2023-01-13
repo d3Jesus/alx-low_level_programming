@@ -9,17 +9,30 @@
 
 void more_numbers(void)
 {
-	int i, j;
-	
-	for (j = 0; j < 10; j++)
+	int line, n, repeat, limit;
+
+	n = '0';
+	repeat = 0;
+	limit = '9';
+
+	for (line = 0; line < 10; line++)
 	{
-		for (i = 0; i < 15; i++)
+		while (repeat < 2)
 		{
-			if (i > 9)
-				_putchar(i / 10 + '0');
-			else
-				_putchar(i % 10 + '0');
+			while (n <= limit)
+			{
+				if (limit == '4')
+					_putchar('1');
+				_putchar(n);
+				n++;
+			}
+			repeat++;
+			limit = '4';
+			n = '0';
 		}
 		_putchar('\n');
+		repeat = 0;
+		n = '0';
+		limit = '9';
 	}
 }
