@@ -11,10 +11,10 @@ void print_line(int n)
 {
 	int line = 0;
 
-	while (line < n)
-	{
-		_putchar('_');
-		line++;
-	}
+    if (n > 0)
+        for (int i = 0; i < n; i++)
+        {
+            _putchar('_');
+        }
 	_putchar('\n');
 }
